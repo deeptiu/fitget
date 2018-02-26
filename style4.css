@@ -200,6 +200,10 @@ a.article, a.article:hover {
     width: 100%;
 }
 
+table{
+   width: 100%;
+   table-layout: fixed;
+}
 
 /* ---------------------------------------------------
     MEDIAQUERIES
