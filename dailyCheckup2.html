@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>dailycheckup</title>
+
+         <!-- Bootstrap CSS CDN -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!-- Our Custom CSS -->
+        <link rel="stylesheet" href="style4.css">
+        <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    </head>
+    <body>
+
+
+        <div class="wrapper">
+            <!-- Sidebar Holder -->
+            <nav id="sidebar">
+                <div class="sidebar-header">
+                    <h3>Fitget</h3>
+                    <strong>FG</strong>
+                </div>
+
+                <ul class="list-unstyled components">
+
+                    <li class="active">
+                        <a href="#home">
+                            <i class="glyphicon glyphicon-home"></i>
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">
+                            <i class="fas fa-heartbeat"></i>
+                            Workout
+                        </a>
+                        <ul class="collapse list-unstyled" id="pageSubmenu">
+                            <li><a href="#">Graphs</a></li>
+                            <li><a href="#">Recommended Videos</a></li>
+                        </ul>
+
+                        <a href="#">
+                            
+                            <i class="glyphicon glyphicon-ok-sign"></i>
+                            Daily Checkup
+                        </a>
+                        
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="glyphicon glyphicon-list-alt"></i>
+                            Planner
+                        </a>
+                    </li>
+
+                    <li class="active">
+                        <a href="#commSubmenu" data-toggle="collapse" aria-expanded="false">
+                            <i class="fas fa-users"></i>
+                            Community
+                        </a>
+                        <ul class="collapse list-unstyled" id="commSubmenu">
+                            <li><a href="CommunityHomepage.html">Community Home</a></li>
+                            <li><a href="friendsList.html">Friends</a></li>
+                            <li><a href="#">Groups</a></li>
+                            <li><a href="challenges.html">Challenges</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <i class="glyphicon glyphicon-cog"></i>
+                            Account Settings
+                        </a>
+                    </li>
+                </ul>
+            </nav> <!--end sidebar-->
+
+
+            <!-- Page Content Holder -->
+            <div id="content">
+
+
+              <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+
+                        <div class="navbar-header">
+                            <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+                                <i class="glyphicon glyphicon-align-justify"></i>
+                                <span></span>
+                            </button>
+                        </div>
+                    </div>
+                </nav>
+
+
+            <div class="container-fluid">
+                    <div class="row">
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-6 col-lg-offset-1">
+                            <h1>Fitget Daily Checkup Page</h1>
+                            <p> Below you will see a summary of your module activity.</p>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-2 col-lg-offset-1" > 
+                            <h4>INSERT DATE HERE</h4>
+                            <div class="col-lg-12" >
+                                <table class="table table-hover ">
+                                    <tbody>
+                                        <tr><td>6am: wake up</td></tr>
+                                        <tr><td>7am: drink</td></tr>
+                                        <tr><td>8am: sit down</td></tr>
+                                        <tr><td>9am: drink</td></tr>
+                                        <tr><td>10am: eat</td></tr>
+                                        <tr><td>11am: drink</td></tr>
+                                        <tr><td>12pm: go to bed</td></tr>
+                                        <tr><td>1pm: drink</td></tr>
+                                        <tr><td>2pm: what happens at 2pm stays in 2pm</td></tr>
+                                        <tr><td>3pm: nap</td></tr>
+                                        <tr><td>4pm: nap</td></tr>
+                                        <tr><td>5pm: nap</td></tr>
+                                        <tr><td>6pm: wake up</td></tr>
+                                        <tr><td>7pm: drink</td></tr>
+                                        <tr><td>8pm: sit down</td></tr>
+                                        <tr><td>9pm: drink</td></tr>
+                                        <tr><td>10m: go to bed</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="row">
+                                <div style = "text-align: center;">
+                                    <h3>How do you feel today ?
+                                    <div class="btn-group btn-group-lg">
+                                        <button type="button" class="btn btn-primary btn-lg" onclick="alert('Happy Mode ON !!')" >&#128515</button>
+                                        <button type="button" class="btn btn-primary btn-lg" onclick="alert('Lets Make Today Beautiful')" >&#128528</button>
+                                        <button type="button" class="btn btn-primary btn-lg" onclick="alert('Just Remeber your worst day only lasts for 24 hrs')">&#128543</button>
+                                        <button type="button" class="btn btn-primary btn-lg" onclick="alert('Let the dust in your eyes make a way out not your passion')">&#128546</button>
+                                    </div></h3>
+                                                <br>
+                                    <p style = "text-align: center;"> Your response will be noted for further analysis </p>
+                                                    <br>
+                                    <hr>
+                                </div>
+                                    </div><br><br>
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <h4 style = "text-align: center;"> Water Consumption</h4>
+                                    <svg style = "alignment-adjust: central;" width="120%" viewbox="0 0 30 42">
+                                                            <linearGradient id="fill"> 
+                                                            <stop offset="70%" stop-color="lightblue"/>
+                                                            <stop offset="30%" stop-color="white"/>
+                                                            </linearGradient>
+                                                            <path fill="url(#fill)" stroke="black" d="M15 3
+                                                                Q16.5 6.8 25 18
+                                                                A12.8 12.8 0 1 1 5 18
+                                                                Q13.5 6.8 15 3z" />
+                                                            </svg>
+                                                            <span>70%</span>
+                                </div>
+                                <div class="col-lg-6">
+                                    <h4 style = "text-align: center;"> Workout Goal</h4>
+                                    <svg width="300" height="250" >
+                                  
+                                        <circle cx="50%" cy="55%" r="80" stroke="black" stroke-width="4" fill="url(#fill2)"/>
+                                                                    <linearGradient id="fill2"> 
+                                            <stop offset="60%" stop-color="orange"/>
+                                            <stop offset="40%" stop-color="white"/>
+                                        </linearGradient>
+                                                            </defs>
+                                    </svg>
+                                                            <span>60%</span>
+                                </div>
+                                <div class="col-lg-3">
+                                    <h4 > Step Goal</h4>
+                                    <svg width="150" height="250" viewbox="0 0 30 42">
+                                                            
+                                        <rect width="60%" height="90%" fill="url(#fill3)" stroke-width="1" stroke="black" />
+                                                                    <linearGradient id="fill3"> 
+                                                                    <stop offset="50%" stop-color="purple"/>
+                                                          
+                                            <stop offset="50%" stop-color="white"/>
+                                        </linearGradient>
+                                    </svg>
+                                                            <span>50%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2">
+                            <div class="row">
+                                <h4>Community Summary</h4>
+                                <ul>
+                                    <li>Workout: 1 of 2000</li>
+                                    <li>USA Running Challenge: 50 of 600</li>
+                                </ul>
+                                            <br><br>
+                                            <hr>
+                            </div>
+                            <div class="row">
+                                <h4>Recommended Groups</h4>
+                                <ul>
+                                    <li>Yoga</li>
+                                    <li>Gamers 4 Fitness</li>
+                                    <li>Rutgers ECE 2019</li>
+                                <ul>
+                                                <br><br>
+                                                <hr>
+                            </div>
+                            <div class="row">
+                                <h4>Recommended Challenges</h4>
+                                <ul>
+                                    <li>9 Before 9 Challenge</li>
+                                    <li>Breakfast Challenge</li>
+                                    <li>100,000 Steps Challenge</li>
+                                </ul>
+                                            <br><br>
+                                            <hr>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+
+
+                
+            </div> <!-- end content -->
+        </div>
+
+
+        <!-- jQuery CDN -->
+         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+         <!-- Bootstrap Js CDN -->
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+         <script type="text/javascript">
+             $(document).ready(function () {
+                 $('#sidebarCollapse').on('click', function () {
+                     $('#sidebar').toggleClass('active');
+                 });
+             });
+         </script>
+    </body>
+</html>

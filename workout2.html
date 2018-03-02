@@ -5,13 +5,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-        <title>sidebartemplate</title>
+        <title>Fitget Workout Page</title>
 
          <!-- Bootstrap CSS CDN -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <!-- Our Custom CSS -->
         <link rel="stylesheet" href="style4.css">
         <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
     </head>
     <body>
 
@@ -95,22 +96,73 @@
 
                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                             <ul class="nav navbar-nav navbar-right">
-                                <li><a href="CommunityHomepage.html">Community Home</a></li>
-                                <li><a href="friendsList.html">Friend List</a></li>
-                                <li><a href="#">Group List</a></li>
-                                <li><a href="challenges.html">Challenges</a></li>
+                                <li><a href="#">Graphs</a></li>
+                                <li><a href="#">Recommended Videos</a></li>
                             </ul>
                         </div>
                     </div>
                 </nav>
 
 
-             <!-- INPUT YOUR CODE HERE -->
+             <div class="container-fluid" style = "background-color: #ff6961; height: 100vh">
+                    <div class="row">
+                        <div class="col-lg-6 col-lg-offset-1">
+                            <h1 style="color:white">Heart Rate Monitor</h1>
+                        </div>  
+                 </div>
+                <hr style="border: 1px solid white" />
+                <canvas id="myChart" width="320px" height="180px"></canvas>
+                </div>
+                
+                
+                
+                
+                
+                
+                
+                 <div class="container-fluid" style = "height: 83vh">
+                    <div class="row">
+                        <div class="col-lg-6 col-lg-offset-1">
+                            <h1 style="color:#ff6961">Recommended Workout Videos</h1>
+                        </div>
+
+                    </div>
+                    <hr style="border: 1px solid #ff6961" />​
+                    <div class="row" style="height:100%; width:100%">
+                    <div style="height:20%">
+                    </div>
+                        <table border="1" bordercolor="#ff6961" align="center" style="width:60%;text-align:center;"  valign="middle">
+                            <tr>
+                                <td><h2 style="color:#ff6961">Shoulders</h2></td>
+                                <td><h2 style="color:#ff6961">Abs</h2></td> 
+                                <td><h2 style="color:#ff6961">Biceps</h2></td>
+                            </tr>
+                            <tr>
+                                <td style="padding:10px"><iframe width="300" height="150" src="https://www.youtube.com/embed/6EqI5V8AUp8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></td>
+                                <td style="padding:10px"><iframe width="300" height="150" src="https://www.youtube.com/embed/1919eTCoESo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></iframe></td>
+                                <td style="padding:10px"><iframe width="300" height="150" src="https://www.youtube.com/embed/5EQ1Nu1ODgE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></td>
+                            </tr>
+                            <tr>
+                                <td style="padding:10px"><iframe width="300" height="150" src="https://www.youtube.com/embed/2Vprklw8cu8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></td>
+                                <td style="padding:10px"><iframe width="300" height="150" src="https://www.youtube.com/embed/hxjKZcOT17E" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></iframe></td> 
+                                <td style="padding:10px"><iframe width="300" height="150" src="https://www.youtube.com/embed/1PEKENchiuQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></iframe></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div> 
 
 
                 
             </div> <!-- end content -->
         </div>
+
+            <!-- Optional JavaScript -->
+            <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="script.js"></script>
+            
+            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 
         <!-- jQuery CDN -->
