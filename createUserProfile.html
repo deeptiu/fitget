@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                    
+                    <title>dailycheckup</title>
+                    
+                    <!-- Bootstrap CSS CDN -->
+                    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                        <!-- Our Custom CSS -->
+                        <link rel="stylesheet" href="style4.css">
+                            <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+                                </head>
+    <body>
+        
+        
+        <div class="wrapper">
+            <!-- Sidebar Holder -->
+            <nav id="sidebar">
+                <div class="sidebar-header">
+                    <h3>Fitget</h3>
+                    <strong>FG</strong>
+                </div>
+                
+                <ul class="list-unstyled components">
+                    
+                    <li class="active">
+                        <a href="#home">
+                            <i class="glyphicon glyphicon-home"></i>
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">
+                            <i class="fas fa-heartbeat"></i>
+                            Workout
+                        </a>
+                        <ul class="collapse list-unstyled" id="pageSubmenu">
+                            <li><a href="#">Graphs</a></li>
+                            <li><a href="#">Recommended Videos</a></li>
+                        </ul>
+                        
+                        <a href="#">
+                            
+                            <i class="glyphicon glyphicon-ok-sign"></i>
+                            Daily Checkup
+                        </a>
+                        
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="glyphicon glyphicon-list-alt"></i>
+                            Planner
+                        </a>
+                    </li>
+                    
+                    <li class="active">
+                        <a href="#commSubmenu" data-toggle="collapse" aria-expanded="false">
+                            <i class="fas fa-users"></i>
+                            Community
+                        </a>
+                        <ul class="collapse list-unstyled" id="commSubmenu">
+                            <li><a href="CommunityHomepage.html">Community Home</a></li>
+                            <li><a href="friendsList.html">Friends</a></li>
+                            <li><a href="#">Groups</a></li>
+                            <li><a href="challenges.html">Challenges</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li>
+                        <a href="#">
+                            <i class="glyphicon glyphicon-cog"></i>
+                            Account Settings
+                        </a>
+                    </li>
+                </ul>
+            </nav> <!--end sidebar-->
+            
+            
+            <!-- Page Content Holder -->
+            <div id="content">
+                
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+                                <i class="glyphicon glyphicon-align-justify"></i>
+                                <span></span>
+                            </button>
+                        </div>
+                    </div>
+                </nav>
+            <!-- your content goes here???-->
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1>Create Your Fitget Profile</h1>
+                        <p> Please fill out the information below so that you can start using Fitget!</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-lg-3">
+                        <!-- figure out how to get a preview of the image to appear also-->
+                        <div class="form-group">
+                            <input type="file" name="file" id="file" required>
+                                </div>
+                        <button class="btn btn-md btn-primary" id="upload-button" type="submit">Upload Profile Image</button>
+                        <!-- put code here to save the image to the database-->
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="form group">
+                            <label for="username">Username:</label>
+                            <input type="text" class="form-control" id="username">
+                                <br>
+                                <label for="password">Password:</label>
+                                <input type="text" class="form-control" id="password">
+                                    <br>
+                                    <label for="email">Email:</label>
+                                    <input type="text" class="form-control" id="email">
+                                        <hr>
+                                        <label for="sel1">Age</label>
+                                        <select class="form-control" id="sel1">
+                                            <option>under 18</option>
+                                            <option>18-24</option>
+                                            <option>25-29</option>
+                                            <option>30-34</option>
+                                            <option>35-39</option>
+                                            <option>40-49</option>
+                                            <option>50-59</option>
+                                            <option>60-69</option>
+                                            <option>70-79</option>
+                                            <option> 80+</option>
+                                        </select>
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <br>
+                                                <label for="feet">Height  -  Feet</label>
+                                                <select class="form-control" id="feet">
+                                                    <option>3 ft</option>
+                                                    <option>4 ft</option>
+                                                    <option>5 ft</option>
+                                                    <option>6 ft</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <br>
+                                                <label for="inch"> Inches</label>
+                                                <select class="form-control" id="inch">
+                                                    <option>0 in</option>
+                                                    <option>1 in</option>
+                                                    <option>2 in</option>
+                                                    <option>3 in</option>
+                                                    <option>4 in</option>
+                                                    <option>5 in</option>
+                                                    <option>6 in</option>
+                                                    <option>7 in</option>
+                                                    <option>8 in</option>
+                                                    <option>9 in</option>
+                                                    <option>10 in</option>
+                                                    <option>11 in</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <label for="weight">Weight:</label>
+                                        <input type="text" class="form-control" id="weight">
+                                            </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <label>Choose Your Modules</label>
+                        <div class="checkbox">
+                            <label><input type="checkbox" value="">Workout</label>
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="checkbox" value="">Planner</label>
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="checkbox" value="">Community</label>
+                        </div>
+                        <hr>
+                        <label>Choose Your Interest Groups</label>
+                        <div class="checkbox">
+                            <label><input type="checkbox" value="">TBD1</label>
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="checkbox" value="">TBD2</label>
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="checkbox" value="">TBD3</label>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end content -->
+            </div>
+        <!-- jQuery CDN -->
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <!-- Bootstrap Js CDN -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+        <script type="text/javascript">
+            $(document).ready(function () {
+                              $('#sidebarCollapse').on('click', function () {
+                                                       $('#sidebar').toggleClass('active');
+                                                       });
+                              });
+        </script>
+    </body>
+</html>
