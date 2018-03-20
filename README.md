@@ -5,3 +5,4 @@ TO DO LIST:
 2. fix links
 3. create database objects
 4. make pages update data dynamically
+5. fix sign in link on the index.html page
