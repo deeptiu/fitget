@@ -1,22 +1,30 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<html lang="en">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="style5.css">
+	
+	<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+<head>
+	<meta charset="utf-8">
+	<title>Plannar Module</title>
+	<meta name="description" content="Hello World">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 
-        <title>Fitget Planner</title>
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 
-         <!-- Bootstrap CSS CDN -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <!-- Our Custom CSS -->
-        <link rel="stylesheet" href="style4.css">
-        <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
-    </head>
-    <body>
-
-
-        <div class="wrapper">
+</head>
+<div class="wrapper">
             <!-- Sidebar Holder -->
             <nav id="sidebar">
                 <div class="sidebar-header">
@@ -89,49 +97,110 @@
                     </div>
                 </nav>
 
+<body>
+<body style="background-color:powderblue;">
+	<header>
 
-             <header>
-                <div class="jumbotron">
-                    <div class="container">
-                        <h1>Planner Module</h1>
-                        <h3>Preliminary Layout</h3>
-                    </div> 
-                </div> 
-             </header>
-                
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-sm-2">
-                            <div class="well">First </div>
-                        </div>
-                        <div class="col-sm-3">
-                            <iframe src="https://calendar.google.com/calendar/embed?src=perrywu6%40gmail.com&ctz=America%2FNew_York" style="border: 0" width="640" height="480" frameborder="0" scrolling="no"></iframe>
-                        </div>
-                        <div class="col-sm-2 col-sm-offset-4">
-                            <div class="well">Second </div>
+		<h1><font size="8">Planner Module</font></h1>
+	</header>
+		<!doctype html>
+<html lang="en">
+  <head>
+  
+  	<div class="container-fluid">
+    	<hr></hr><!-- Break-->
+    </div>
+    <div class="container-fluid">
+    	<div class="row">
+    		<div class="col-lg-2 col-lg-offset-1" > 
+    			<h4><font size="5">3/24/2018</h4>
+    			<h5>Saturday</font></h5>
+    			<div class="col-lg-12" >
+    				<h6><b><font size="4">Events</font></b></h6>
+    				<table class="table table-hover ">
+    					<tbody>
+    						<tr><td><b>April 5:</b> Cardio</td></tr>
+    						<tr><td><b>April 12:</b> Sprints</td></tr>
+    						<tr><td><b>April 19:</b> Shoulders</td></tr>
+    						<tr><td><b>April 26:</b> Triceps</td></tr>
+    						<tr><td><b>April 30:</b> Biking</td></tr>
+    						
+						</tbody>
+					</table>
+    			</div>
+    		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-3">
+					<iframe src="https://calendar.google.com/calendar/embed?src=perrywu6%40gmail.com&ctz=America%2FNew_York" style="border: 0" width="640" height="480" frameborder="0" scrolling="no"></iframe>
+				</div>
+				<div class="col-sm-3 col-sm-offset-4"><!-- Start right side-->
+					<div class="container-fluid">
+						<div class="well">
+						<table class="table table-bordered">
+							<thead>
+								<th><font size="4">Current Goals</font></th>
+							</thead>
+							<tr>
+								<td>&bull; Workout 10 times this month <p> </p>
+								End at 4/1/2018
+								<svg width="180" height="20" > 
+  								<rect width="100%" height="90%" fill="url(#fill1)" stroke-width="1" stroke="black" />
+                          	  <linearGradient id="fill1">            
+        							<stop offset="70%" stop-color="green"/>
+        							<stop offset="70%" stop-color="white"/>
+    							</linearGradient>
+								</svg>
+								</td>
+								
+							</tr>
+							<tr>
+								<td>&bull; Run 10 miles <p> </p>
+								End at 5/3/2018
+								<svg width="180" height="20" > 
+  								<rect width="100%" height="90%" fill="url(#fill3)" stroke-width="1" stroke="black" />
+                          	  	<linearGradient id="fill3">            
+        							<stop offset="20%" stop-color="red"/>
+        							<stop offset="20%" stop-color="white"/>
+    							</linearGradient>
+								</svg>
+								</td>
 
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-2">
-                            <div class="well">Third </div>
+							</tr>
+						</table>
+						<!--<well style="background-color:#00ff00";>-->
+					</div>
+					</div>
 
-                        </div>
-                        <div class="col-sm-2 col-sm-offset-7">
-                            <div class="well">Fourth</div>
-
-                        </div>
-                    <div>
-                </div>
-             
+					<div class="row">
+						<div class="well">
+							<r2><b><font size="4">Mood Tracker</font></b></r2>
 
 
-                
-            </div> <!-- end content -->
-        </div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="well">
+							<r3><b><font size="4">Daily Tips</font></b></r3>
+							<ul>
+								<font size="2">
+								<li>Tip 1</li>
+								<li>Tip 2</li>
+								<li>Tip 3</li>
+							</font>
+							</ul>
 
+						</div>
+					</div>
+				</div>
+			</div>
 
-        <!-- jQuery CDN -->
+		</div>
+	</div>
+</div>
+	<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<!-- jQuery CDN -->
          <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
          <!-- Bootstrap Js CDN -->
          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -143,5 +212,5 @@
                  });
              });
          </script>
-    </body>
+</body>	
 </html>
