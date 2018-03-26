@@ -29,6 +29,7 @@ $date = $_POST["date"];
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 
 </head>
+<body>
 <div class="wrapper">
             <!-- Sidebar Holder -->
             <nav id="sidebar">
@@ -102,7 +103,7 @@ $date = $_POST["date"];
                     </div>
                 </nav>
 
-<body>
+
 <body style="background-color:powderblue;">
 	<header>
 
