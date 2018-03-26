@@ -1,3 +1,8 @@
+<?php
+$name = $_POST["name"];
+$date = $_POST["date"];
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <!-- Required meta tags -->
@@ -117,33 +122,50 @@
     			<h5>Saturday</font></h5>
     			<div class="col-lg-12" >
     				<h6><b><font size="4">Events</font></b></h6>
-    				<table class="table table-hover ">
-    					<tbody>
-    						
-    						
-                           
-                            <form action = "planner2_events.php" method = "post">
-                            Enter event1: <input name="name1" type="text">
-                            Enter date1(MM/DD/YYYY):<input name="date1" type="text">
-                           
-                            Enter event2: <input name="name2" type="text">
-                            Enter date2(MM/DD/YYYY):<input name="date2" type="text">
-                            
-                            Enter event3: <input name="name3" type="text">
-                            Enter date3(MM/DD/YYYY):<input name="date3" type="text">
-                            
-                            Enter event4: <input name="name4" type="text">
-                            Enter date4(MM/DD/YYYY):<input name="date4" type="text">
-
-                            Enter event5: <input name="name5" type="text">
-                            Enter date5(MM/DD/YYYY):<input name="date5" type="text">
-
-                            <input type="submit">
-                            </form>
+                    
+                    <head>
+<title>Table</title>
+</head>
+<body>
 
 
-						</tbody>
-					</table>
+<?php
+
+    $name1 = $_POST["name1"];
+    $date1 = $_POST["date1"];
+
+    $name2 = $_POST["name2"];
+    $date2 = $_POST["date2"];
+
+    $name3 = $_POST["name3"];
+    $date3 = $_POST["date3"];
+
+    $name4 = $_POST["name4"];
+    $date4 = $_POST["date4"];
+
+    $name5 = $_POST["name5"];
+    $date5 = $_POST["date5"];
+
+  
+                        
+                             
+ echo "<font size=\"4\" >$date1</font>&nbsp;&nbsp". "<font size=\"3\" >$name1</font>";
+ echo "<br>";
+ echo "<font size=\"4\" >$date2</font>&nbsp;&nbsp". "<font size=\"3\" >$name2</font>";
+echo "<br>";
+echo "<font size=\"4\" >$date3</font>&nbsp;&nbsp". "<font size=\"3\" >$name3</font>";
+ echo "<br>";
+ echo "<font size=\"4\" >$date4</font>&nbsp;&nbsp". "<font size=\"3\" >$name4</font>";
+ echo "<br>";
+ echo "<font size=\"4\" >$date5</font>&nbsp;&nbsp". "<font size=\"3\" >$name5</font>";
+                        
+
+                    
+?>
+
+
+</body>
+                
     			</div>
     		</div>
 		<div class="container">
