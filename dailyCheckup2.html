@@ -148,7 +148,7 @@
                                         <input type="text" class="form-control" id="ounces">
                                     </div>
                                     <div class="col-xs-9">
-                                        <button class="btn btn-primary" type="submit">Submit</button>
+                                        <button class="btn btn-primary" id="submitButton" type="submit">Submit</button>
                                     </div>
                                 </div>
                             </div><br>
@@ -244,6 +244,11 @@
                      $('#sidebar').toggleClass('active');
                  });
              });
+             $('button').each(function(){
+                $('#submitButton').click(function(){
+                        $('input[type="text"]').val('');
+                        });
+                  });
          </script>
     </body>
 </html>
