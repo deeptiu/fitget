@@ -215,9 +215,133 @@ echo "<font size=\"4\" >$date3</font><br>". "<font size=\"3\" >$name3</font>";
 							<r3><b><font size="4">Daily Tips</font></b></r3>
 							<ul>
 								<font size="2">
-								<li>Tip 1: </li>
-								<li>Tip 2</li>
-								<li>Tip 3</li>
+								<li>
+                                <?php
+                                $name1 = $_POST["name1"];
+    $date1 = $_POST["date1"];
+
+    $name2 = $_POST["name2"];
+    $date2 = $_POST["date2"];
+
+    $name3 = $_POST["name3"];
+    $date3 = $_POST["date3"];
+
+    $name4 = $_POST["name4"];
+    $date4 = $_POST["date4"];
+
+    $name5 = $_POST["name5"];
+    $date5 = $_POST["date5"];
+
+
+function getChaBetweenTwoDate($date){
+    $showtime=date("Y-m-d");
+    $Date_List_a1=explode("-",$date);
+    $Date_List_a2=explode("-",$showtime);
+    $d1=mktime(0,0,0,$Date_List_a1[1],$Date_List_a1[2],$Date_List_a1[0]);
+    $d2=mktime(0,0,0,$Date_List_a2[1],$Date_List_a2[2],$Date_List_a2[0]);
+    $Days=round(($d1-$d2)/3600/24);
+    return $Days;}
+   
+
+$Days = getChaBetweenTwoDate($date1);
+
+if($Days<3){
+    $TIP1 = " will come in less than 3 days. You should prepare for it.";
+echo $name1 . $TIP1;
+}
+else{
+    $TIP10 ="Drink Some Water, Especially Before Meals";
+echo $TIP10;
+}
+
+?>
+</li>
+								<li>
+                                    <?php
+                                $name1 = $_POST["name1"];
+    $date1 = $_POST["date1"];
+
+    $name2 = $_POST["name2"];
+    $date2 = $_POST["date2"];
+
+    $name3 = $_POST["name3"];
+    $date3 = $_POST["date3"];
+
+    $name4 = $_POST["name4"];
+    $date4 = $_POST["date4"];
+
+    $name5 = $_POST["name5"];
+    $date5 = $_POST["date5"];
+
+
+function getChaBetweenTwoDate1($date){
+    $showtime=date("Y-m-d");
+    $Date_List_a1=explode("-",$date);
+    $Date_List_a2=explode("-",$showtime);
+    $d1=mktime(0,0,0,$Date_List_a1[1],$Date_List_a1[2],$Date_List_a1[0]);
+    $d2=mktime(0,0,0,$Date_List_a2[1],$Date_List_a2[2],$Date_List_a2[0]);
+    $Days2=round(($d1-$d2)/3600/24);
+    return $Days2;}
+   
+
+$Days2 = getChaBetweenTwoDate1($date2);
+
+if($Days2<3){
+    $TIP1 = " will come in less than 3 days. You should prepare for it.";
+echo $name2 . $TIP1;
+}
+else{
+    $TIP11 ="Never skip breakfast";
+echo $TIP11;
+}
+
+?>
+                                </li>
+
+
+								<li>
+                                    <?php
+                                $name1 = $_POST["name1"];
+    $date1 = $_POST["date1"];
+
+    $name2 = $_POST["name2"];
+    $date2 = $_POST["date2"];
+
+    $name3 = $_POST["name3"];
+    $date3 = $_POST["date3"];
+
+    $name4 = $_POST["name4"];
+    $date4 = $_POST["date4"];
+
+    $name5 = $_POST["name5"];
+    $date5 = $_POST["date5"];
+
+
+function getChaBetweenTwoDate2($date){
+    $showtime=date("Y-m-d");
+    $Date_List_a1=explode("-",$date);
+    $Date_List_a2=explode("-",$showtime);
+    $d1=mktime(0,0,0,$Date_List_a1[1],$Date_List_a1[2],$Date_List_a1[0]);
+    $d2=mktime(0,0,0,$Date_List_a2[1],$Date_List_a2[2],$Date_List_a2[0]);
+    $Days3=round(($d1-$d2)/3600/24);
+    return $Days3;}
+   
+
+$Days3 = getChaBetweenTwoDate2($date3);
+
+if($Days3<3){
+    $TIP1 = " will come in less than 3 days. You should prepare for it.";
+echo $name3 . $TIP1;
+}
+else{
+    $TIP12 ="Don't Smoke or do Drugs, and Only Drink in Moderation.";
+echo $TIP12;
+}
+
+?>
+                                </li>
+
+
 							</font>
 							</ul>
 
