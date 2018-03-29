@@ -94,23 +94,20 @@
                 </nav>
 
 
-<body style="container-fluid">
+<div class="container-fluid">
 	<header>
 
 		<h1><font size="8">Planner Module</font></h1>
 	</header>
-		<!doctype html>
-<html lang="en">
-  <head>
-  
-  	<div class="container-fluid">
-    	<hr></hr><!-- Break-->
-    </div>
-    <div class="container-fluid">
+	
     	<div class="row">
     		<div class="col-lg-2 " > 
-    			<h4><font size="5">03/29/2018</h4>
-    			<h5>Thursday</font></h5>
+    			<h4><font size="5"></h4>
+                    <script type="text/javascript"> 
+                    var myDate = new Date(); 
+                    document.write(myDate.toLocaleString()) 
+                    </script> 
+    			<h5></font></h5>
     			<div class="col-lg-12" >
     				<h6><b><font size="4">Events</font></b></h6>
                     
@@ -218,7 +215,7 @@ echo "<font size=\"4\" >$date3</font><br>". "<font size=\"3\" >$name3</font>";
 							<r3><b><font size="4">Daily Tips</font></b></r3>
 							<ul>
 								<font size="2">
-								<li>Tip 1</li>
+								<li>Tip 1: </li>
 								<li>Tip 2</li>
 								<li>Tip 3</li>
 							</font>
