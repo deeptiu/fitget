@@ -1,34 +1,24 @@
-<?php
-$name = $_POST["name"];
-$date = $_POST["date"];
-?>
 
 <!DOCTYPE html>
 <html lang="en">
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Plannar Module</title>
     <!-- Bootstrap CSS -->
-  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<link rel="stylesheet" href="style5.css">
+  	
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css">
+	
+    <link rel="stylesheet" href="style4.css" type="text/css">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet" type="text/css">
+
 	
 	<!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    
-<head>
-	<meta charset="utf-8">
-	<title>Plannar Module</title>
-	<meta name="description" content="Hello World">
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-
-	<!-- Optional theme -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-
-</head>
+ </head>
 <body>
 <div class="wrapper">
             <!-- Sidebar Holder -->
@@ -104,23 +94,20 @@ $date = $_POST["date"];
                 </nav>
 
 
-<body style="background-color:powderblue;">
+<div class="container-fluid">
 	<header>
 
 		<h1><font size="8">Planner Module</font></h1>
 	</header>
-		<!doctype html>
-<html lang="en">
-  <head>
-  
-  	<div class="container-fluid">
-    	<hr></hr><!-- Break-->
-    </div>
-    <div class="container-fluid">
+	
     	<div class="row">
-    		<div class="col-lg-2 col-lg-offset-1" > 
-    			<h4><font size="5">3/24/2018</h4>
-    			<h5>Saturday</font></h5>
+    		<div class="col-lg-2 " > 
+    			<h4><font size="5"></h4>
+                    <script type="text/javascript"> 
+                    var myDate = new Date(); 
+                    document.write(myDate.toLocaleString()) 
+                    </script> 
+    			<h5></font></h5>
     			<div class="col-lg-12" >
     				<h6><b><font size="4">Events</font></b></h6>
                     
@@ -150,15 +137,19 @@ $date = $_POST["date"];
   
                         
                              
- echo "<font size=\"4\" >$date1</font>&nbsp;&nbsp". "<font size=\"3\" >$name1</font>";
+ echo "<font size=\"4\" >$date1</font> <br>". "<font size=\"3\" >$name1</font>";
  echo "<br>";
- echo "<font size=\"4\" >$date2</font>&nbsp;&nbsp". "<font size=\"3\" >$name2</font>";
+ echo "<br>";
+ echo "<font size=\"4\" >$date2</font><br>". "<font size=\"3\" >$name2</font>";
 echo "<br>";
-echo "<font size=\"4\" >$date3</font>&nbsp;&nbsp". "<font size=\"3\" >$name3</font>";
+echo "<br>";
+echo "<font size=\"4\" >$date3</font><br>". "<font size=\"3\" >$name3</font>";
  echo "<br>";
- echo "<font size=\"4\" >$date4</font>&nbsp;&nbsp". "<font size=\"3\" >$name4</font>";
  echo "<br>";
- echo "<font size=\"4\" >$date5</font>&nbsp;&nbsp". "<font size=\"3\" >$name5</font>";
+ echo "<font size=\"4\" >$date4</font><br>". "<font size=\"3\" >$name4</font>";
+ echo "<br>";
+ echo "<br>";
+ echo "<font size=\"4\" >$date5</font><br>". "<font size=\"3\" >$name5</font>";
                         
 
                     
@@ -172,7 +163,7 @@ echo "<font size=\"4\" >$date3</font>&nbsp;&nbsp". "<font size=\"3\" >$name3</fo
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-3">
-					<iframe src="https://calendar.google.com/calendar/embed?src=perrywu6%40gmail.com&ctz=America%2FNew_York" style="border: 0" width="640" height="480" frameborder="0" scrolling="no"></iframe>
+					<iframe src="https://calendar.google.com/calendar/embed?src=perrywu6%40gmail.com&ctz=America%2FNew_York" style="border: 0" width="660" height="480" frameborder="0" scrolling="no"></iframe>
 				</div>
 				<div class="col-sm-3 col-sm-offset-4"><!-- Start right side-->
 					<div class="container-fluid">
@@ -224,7 +215,7 @@ echo "<font size=\"4\" >$date3</font>&nbsp;&nbsp". "<font size=\"3\" >$name3</fo
 							<r3><b><font size="4">Daily Tips</font></b></r3>
 							<ul>
 								<font size="2">
-								<li>Tip 1</li>
+								<li>Tip 1: </li>
 								<li>Tip 2</li>
 								<li>Tip 3</li>
 							</font>
