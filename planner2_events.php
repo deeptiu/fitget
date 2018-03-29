@@ -1,34 +1,24 @@
-<?php
-$name = $_POST["name"];
-$date = $_POST["date"];
-?>
 
 <!DOCTYPE html>
 <html lang="en">
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Plannar Module</title>
     <!-- Bootstrap CSS -->
-  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<link rel="stylesheet" href="style5.css">
+  	
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css">
+	
+    <link rel="stylesheet" href="style4.css" type="text/css">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet" type="text/css">
+
 	
 	<!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    
-<head>
-	<meta charset="utf-8">
-	<title>Plannar Module</title>
-	<meta name="description" content="Hello World">
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-
-	<!-- Optional theme -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-
-</head>
+ </head>
 <body>
 <div class="wrapper">
             <!-- Sidebar Holder -->
@@ -104,7 +94,7 @@ $date = $_POST["date"];
                 </nav>
 
 
-<body style="background-color:powderblue;">
+<body style="container-fluid">
 	<header>
 
 		<h1><font size="8">Planner Module</font></h1>
@@ -119,8 +109,8 @@ $date = $_POST["date"];
     <div class="container-fluid">
     	<div class="row">
     		<div class="col-lg-2 col-lg-offset-1" > 
-    			<h4><font size="5">3/24/2018</h4>
-    			<h5>Saturday</font></h5>
+    			<h4><font size="5">03/29/2018</h4>
+    			<h5>Thursday</font></h5>
     			<div class="col-lg-12" >
     				<h6><b><font size="4">Events</font></b></h6>
                     
