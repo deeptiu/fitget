@@ -205,8 +205,37 @@ echo "<font size=\"4\" >$date3</font><br>". "<font size=\"3\" >$name3</font>";
 
 					<div class="row">
 						<div class="well">
-							<r2><b><font size="4">Mood Tracker</font></b></r2>
-
+                            <r2><b><font size="4">Mood Tracker<br></font></b></r2><!-- first bar-->
+                            <svg width="45" height="100" > 
+                                <rect width="40%" height="100%" fill="url(#fill2)" stroke-width="1" stroke="black" />
+                                <linearGradient id="fill2" gradientTransform="rotate(90)">            
+                                    <stop offset="30%" stop-color="white"/>
+                                    <stop offset="30%" stop-color="orange"/>
+                                </linearGradient>
+                            </svg>
+                                <svg width="45" height="100" > 
+                                <rect width="40%" height="100%" fill="url(#fill4)" stroke-width="1" stroke="black" />
+                                <linearGradient id="fill4" gradientTransform="rotate(90)">            
+                                    <stop offset="60%" stop-color="white"/>
+                                    <stop offset="60%" stop-color="green"/>
+                                </linearGradient>
+                            </svg>
+                               <svg width="45" height="100" > 
+                                <rect width="40%" height="100%" fill="url(#fill5)" stroke-width="1" stroke="black" />
+                                <linearGradient id="fill5" gradientTransform="rotate(90)">            
+                                    <stop offset="80%" stop-color="white"/>
+                                    <stop offset="80%" stop-color="red"/>
+                                </linearGradient>
+                            </svg>
+                               <svg width="45" height="100" > 
+                                <rect width="40%" height="100%" fill="url(#fill6)" stroke-width="1" stroke="black" />
+                                <linearGradient id="fill6" gradientTransform="rotate(90)">            
+                                    <stop offset="90%" stop-color="white"/>
+                                    <stop offset="90%" stop-color="blue"/>
+                                </linearGradient>
+                            </svg>
+                            <br>
+                            <pre class="tab">&#128515     &#128528     &#128543     &#128546</pre>
 
 						</div>
 					</div>
