@@ -108,7 +108,7 @@
     </div>
     <div class="container-fluid">
     	<div class="row">
-    		<div class="col-lg-2 col-lg-offset-1" > 
+    		<div class="col-lg-2 " > 
     			<h4><font size="5">03/29/2018</h4>
     			<h5>Thursday</font></h5>
     			<div class="col-lg-12" >
