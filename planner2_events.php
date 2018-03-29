@@ -140,15 +140,19 @@
   
                         
                              
- echo "<font size=\"4\" >$date1</font>&nbsp;&nbsp". "<font size=\"3\" >$name1</font>";
+ echo "<font size=\"4\" >$date1</font> <br>". "<font size=\"3\" >$name1</font>";
  echo "<br>";
- echo "<font size=\"4\" >$date2</font>&nbsp;&nbsp". "<font size=\"3\" >$name2</font>";
+ echo "<br>";
+ echo "<font size=\"4\" >$date2</font><br>". "<font size=\"3\" >$name2</font>";
 echo "<br>";
-echo "<font size=\"4\" >$date3</font>&nbsp;&nbsp". "<font size=\"3\" >$name3</font>";
+echo "<br>";
+echo "<font size=\"4\" >$date3</font><br>". "<font size=\"3\" >$name3</font>";
  echo "<br>";
- echo "<font size=\"4\" >$date4</font>&nbsp;&nbsp". "<font size=\"3\" >$name4</font>";
  echo "<br>";
- echo "<font size=\"4\" >$date5</font>&nbsp;&nbsp". "<font size=\"3\" >$name5</font>";
+ echo "<font size=\"4\" >$date4</font><br>". "<font size=\"3\" >$name4</font>";
+ echo "<br>";
+ echo "<br>";
+ echo "<font size=\"4\" >$date5</font><br>". "<font size=\"3\" >$name5</font>";
                         
 
                     
@@ -162,7 +166,7 @@ echo "<font size=\"4\" >$date3</font>&nbsp;&nbsp". "<font size=\"3\" >$name3</fo
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-3">
-					<iframe src="https://calendar.google.com/calendar/embed?src=perrywu6%40gmail.com&ctz=America%2FNew_York" style="border: 0" width="640" height="480" frameborder="0" scrolling="no"></iframe>
+					<iframe src="https://calendar.google.com/calendar/embed?src=perrywu6%40gmail.com&ctz=America%2FNew_York" style="border: 0" width="660" height="480" frameborder="0" scrolling="no"></iframe>
 				</div>
 				<div class="col-sm-3 col-sm-offset-4"><!-- Start right side-->
 					<div class="container-fluid">
