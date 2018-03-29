@@ -4,7 +4,17 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<style>
+#myDIV{
+	width : 100%;
+	padding:50px 0;
+	padding-bottom:20px ;
+	text-align:center;
+	margin-top:20px;
 
+}
+
+</style>
         <title>Fitget User Friend List</title>
 
          <!-- Bootstrap CSS CDN -->
@@ -39,7 +49,7 @@
                         </a>
                         <ul class="collapse list-unstyled" id="pageSubmenu">
                             <li><a href="workout2.html">Graphs</a></li>
-                            <li><a href="workout2.html/#Videos">Recommended Videos</a></li>
+                            <li><a href="workout2.html">Recommended Videos</a></li>
                         </ul>
                     </li>
                     <li>
@@ -114,21 +124,18 @@
             <div class="container-fluid">
               <div class="row">
                 
-                <div class="col-lg-6">
+                <div class="col-lg-10">
                   <div class="row">
                   
                   
                   
-                    <h2>Neharika B</h2>
+                    <h2>Deepti Upmaka</h2>
                     <table class="table table-bordered">
                       <tbody>
                         <tr>
                           <div class="panel panel-primary">
                           
-                          <td class="success"><a href="https://www.netflix.com/title/70153404"><div class="panel-heading">Friends List</a></td></div></div>
-
-                          <td>Groups</td>
-                          <td>Challenges </td>
+                          
                         </tr>
                       </tbody>
                     </table>
@@ -136,8 +143,53 @@
                       <!-- <tbody> -->
 
                         <tr>
-                          <td><b> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cat03.jpg/1200px-Cat03.jpg" class="img-circle" alt="Profile Photo" height="50" width="50"> Deepti             
-                          <button type="button" class="btn btn-success pull-right" text-align: "right">Challenge</button></b></td>
+                          <td><b> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cat03.jpg/1200px-Cat03.jpg" class="img-circle" alt="Profile Photo" height="50" width="50">             
+                          <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#myDIV" >Neharika</button> 
+
+                          <div id="myDIV" class="collapse">
+                         <table class="table">
+                      <thead>
+                        <tr>
+                          <th scope="col"></th>
+                          <th scope="col"></th>
+                          <th scope="col"></th>
+                          <th scope="col"></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td rowspan = "4" colspan = "2"> <img src="logo.jpg" class="img-circle" alt="Profile Photo" height="250"width="250"></td>
+                        </tr>
+                        <tr>
+                          <td>Username:</td>
+                          <td>Neharika Bhandari</td>
+                        </tr>
+                        <tr>
+                          <td>Lifetime points:</td>
+                          <td>250</td>
+                        </tr>
+                        <tr>
+                          <td>Interests:</td>
+                          <td>Running</td>
+                        </tr>
+                      </tbody>
+                </table>
+ 
+                          </div>
+                              <button type="button" class="btn btn-success pull-right" data-toggle="collapse" text-align: "right">Challenge</button></b></td>
+                          
+                          <script>
+                          function myFunction(){
+                          	var x = document.getElementById("myDIV");
+                          	if(x.style.display === "none"){
+                          	   x.style.display = "block";
+                          	} else {
+                          		x.style.display = "none";
+                          	}
+
+                          }
+
+                          </script>
 
                         </tr>
                         <tr>
