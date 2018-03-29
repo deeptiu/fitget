@@ -1,34 +1,24 @@
-<?php
-$name = $_POST["name"];
-$date = $_POST["date"];
-?>
 
 <!DOCTYPE html>
 <html lang="en">
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Plannar Module</title>
     <!-- Bootstrap CSS -->
-  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<link rel="stylesheet" href="style5.css">
+  	
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css">
+	
+    <link rel="stylesheet" href="style4.css" type="text/css">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet" type="text/css">
+
 	
 	<!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    
-<head>
-	<meta charset="utf-8">
-	<title>Plannar Module</title>
-	<meta name="description" content="Hello World">
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-
-	<!-- Optional theme -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-
-</head>
+ </head>
 <body>
 <div class="wrapper">
             <!-- Sidebar Holder -->
@@ -104,23 +94,20 @@ $date = $_POST["date"];
                 </nav>
 
 
-<body style="background-color:powderblue;">
+<div class="container-fluid">
 	<header>
 
 		<h1><font size="8">Planner Module</font></h1>
 	</header>
-		<!doctype html>
-<html lang="en">
-  <head>
-  
-  	<div class="container-fluid">
-    	<hr></hr><!-- Break-->
-    </div>
-    <div class="container-fluid">
+	
     	<div class="row">
-    		<div class="col-lg-2 col-lg-offset-1" > 
-    			<h4><font size="5">3/24/2018</h4>
-    			<h5>Saturday</font></h5>
+    		<div class="col-lg-2 " > 
+    			<h4><font size="5"></h4>
+                    <script type="text/javascript"> 
+                    var myDate = new Date(); 
+                    document.write(myDate.toLocaleString()) 
+                    </script> 
+    			<h5></font></h5>
     			<div class="col-lg-12" >
     				<h6><b><font size="4">Events</font></b></h6>
                     
@@ -150,15 +137,19 @@ $date = $_POST["date"];
   
                         
                              
- echo "<font size=\"4\" >$date1</font>&nbsp;&nbsp". "<font size=\"3\" >$name1</font>";
+ echo "<font size=\"4\" >$date1</font> <br>". "<font size=\"3\" >$name1</font>";
  echo "<br>";
- echo "<font size=\"4\" >$date2</font>&nbsp;&nbsp". "<font size=\"3\" >$name2</font>";
+ echo "<br>";
+ echo "<font size=\"4\" >$date2</font><br>". "<font size=\"3\" >$name2</font>";
 echo "<br>";
-echo "<font size=\"4\" >$date3</font>&nbsp;&nbsp". "<font size=\"3\" >$name3</font>";
+echo "<br>";
+echo "<font size=\"4\" >$date3</font><br>". "<font size=\"3\" >$name3</font>";
  echo "<br>";
- echo "<font size=\"4\" >$date4</font>&nbsp;&nbsp". "<font size=\"3\" >$name4</font>";
  echo "<br>";
- echo "<font size=\"4\" >$date5</font>&nbsp;&nbsp". "<font size=\"3\" >$name5</font>";
+ echo "<font size=\"4\" >$date4</font><br>". "<font size=\"3\" >$name4</font>";
+ echo "<br>";
+ echo "<br>";
+ echo "<font size=\"4\" >$date5</font><br>". "<font size=\"3\" >$name5</font>";
                         
 
                     
@@ -172,7 +163,7 @@ echo "<font size=\"4\" >$date3</font>&nbsp;&nbsp". "<font size=\"3\" >$name3</fo
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-3">
-					<iframe src="https://calendar.google.com/calendar/embed?src=perrywu6%40gmail.com&ctz=America%2FNew_York" style="border: 0" width="640" height="480" frameborder="0" scrolling="no"></iframe>
+					<iframe src="https://calendar.google.com/calendar/embed?src=perrywu6%40gmail.com&ctz=America%2FNew_York" style="border: 0" width="660" height="480" frameborder="0" scrolling="no"></iframe>
 				</div>
 				<div class="col-sm-3 col-sm-offset-4"><!-- Start right side-->
 					<div class="container-fluid">
@@ -214,8 +205,37 @@ echo "<font size=\"4\" >$date3</font>&nbsp;&nbsp". "<font size=\"3\" >$name3</fo
 
 					<div class="row">
 						<div class="well">
-							<r2><b><font size="4">Mood Tracker</font></b></r2>
-
+                            <r2><b><font size="4">Mood Tracker<br></font></b></r2><!-- first bar-->
+                            <svg width="45" height="100" > 
+                                <rect width="40%" height="100%" fill="url(#fill2)" stroke-width="1" stroke="black" />
+                                <linearGradient id="fill2" gradientTransform="rotate(90)">            
+                                    <stop offset="30%" stop-color="white"/>
+                                    <stop offset="30%" stop-color="orange"/>
+                                </linearGradient>
+                            </svg>
+                                <svg width="45" height="100" > 
+                                <rect width="40%" height="100%" fill="url(#fill4)" stroke-width="1" stroke="black" />
+                                <linearGradient id="fill4" gradientTransform="rotate(90)">            
+                                    <stop offset="60%" stop-color="white"/>
+                                    <stop offset="60%" stop-color="green"/>
+                                </linearGradient>
+                            </svg>
+                               <svg width="45" height="100" > 
+                                <rect width="40%" height="100%" fill="url(#fill5)" stroke-width="1" stroke="black" />
+                                <linearGradient id="fill5" gradientTransform="rotate(90)">            
+                                    <stop offset="80%" stop-color="white"/>
+                                    <stop offset="80%" stop-color="red"/>
+                                </linearGradient>
+                            </svg>
+                               <svg width="45" height="100" > 
+                                <rect width="40%" height="100%" fill="url(#fill6)" stroke-width="1" stroke="black" />
+                                <linearGradient id="fill6" gradientTransform="rotate(90)">            
+                                    <stop offset="90%" stop-color="white"/>
+                                    <stop offset="90%" stop-color="blue"/>
+                                </linearGradient>
+                            </svg>
+                            <br>
+                            <pre class="tab">&#128515     &#128528     &#128543     &#128546</pre>
 
 						</div>
 					</div>
@@ -224,9 +244,133 @@ echo "<font size=\"4\" >$date3</font>&nbsp;&nbsp". "<font size=\"3\" >$name3</fo
 							<r3><b><font size="4">Daily Tips</font></b></r3>
 							<ul>
 								<font size="2">
-								<li>Tip 1</li>
-								<li>Tip 2</li>
-								<li>Tip 3</li>
+								<li>
+                                <?php
+                                $name1 = $_POST["name1"];
+    $date1 = $_POST["date1"];
+
+    $name2 = $_POST["name2"];
+    $date2 = $_POST["date2"];
+
+    $name3 = $_POST["name3"];
+    $date3 = $_POST["date3"];
+
+    $name4 = $_POST["name4"];
+    $date4 = $_POST["date4"];
+
+    $name5 = $_POST["name5"];
+    $date5 = $_POST["date5"];
+
+
+function getChaBetweenTwoDate($date){
+    $showtime=date("Y-m-d");
+    $Date_List_a1=explode("-",$date);
+    $Date_List_a2=explode("-",$showtime);
+    $d1=mktime(0,0,0,$Date_List_a1[1],$Date_List_a1[2],$Date_List_a1[0]);
+    $d2=mktime(0,0,0,$Date_List_a2[1],$Date_List_a2[2],$Date_List_a2[0]);
+    $Days=round(($d1-$d2)/3600/24);
+    return $Days;}
+   
+
+$Days = getChaBetweenTwoDate($date1);
+
+if($Days<3){
+    $TIP1 = " will come in less than 3 days. You should prepare for it.";
+echo $name1 . $TIP1;
+}
+else{
+    $TIP10 ="Drink Some Water, Especially Before Meals";
+echo $TIP10;
+}
+
+?>
+</li>
+								<li>
+                                    <?php
+                                $name1 = $_POST["name1"];
+    $date1 = $_POST["date1"];
+
+    $name2 = $_POST["name2"];
+    $date2 = $_POST["date2"];
+
+    $name3 = $_POST["name3"];
+    $date3 = $_POST["date3"];
+
+    $name4 = $_POST["name4"];
+    $date4 = $_POST["date4"];
+
+    $name5 = $_POST["name5"];
+    $date5 = $_POST["date5"];
+
+
+function getChaBetweenTwoDate1($date){
+    $showtime=date("Y-m-d");
+    $Date_List_a1=explode("-",$date);
+    $Date_List_a2=explode("-",$showtime);
+    $d1=mktime(0,0,0,$Date_List_a1[1],$Date_List_a1[2],$Date_List_a1[0]);
+    $d2=mktime(0,0,0,$Date_List_a2[1],$Date_List_a2[2],$Date_List_a2[0]);
+    $Days2=round(($d1-$d2)/3600/24);
+    return $Days2;}
+   
+
+$Days2 = getChaBetweenTwoDate1($date2);
+
+if($Days2<3){
+    $TIP1 = " will come in less than 3 days. You should prepare for it.";
+echo $name2 . $TIP1;
+}
+else{
+    $TIP11 ="Never skip breakfast";
+echo $TIP11;
+}
+
+?>
+                                </li>
+
+
+								<li>
+                                    <?php
+                                $name1 = $_POST["name1"];
+    $date1 = $_POST["date1"];
+
+    $name2 = $_POST["name2"];
+    $date2 = $_POST["date2"];
+
+    $name3 = $_POST["name3"];
+    $date3 = $_POST["date3"];
+
+    $name4 = $_POST["name4"];
+    $date4 = $_POST["date4"];
+
+    $name5 = $_POST["name5"];
+    $date5 = $_POST["date5"];
+
+
+function getChaBetweenTwoDate2($date){
+    $showtime=date("Y-m-d");
+    $Date_List_a1=explode("-",$date);
+    $Date_List_a2=explode("-",$showtime);
+    $d1=mktime(0,0,0,$Date_List_a1[1],$Date_List_a1[2],$Date_List_a1[0]);
+    $d2=mktime(0,0,0,$Date_List_a2[1],$Date_List_a2[2],$Date_List_a2[0]);
+    $Days3=round(($d1-$d2)/3600/24);
+    return $Days3;}
+   
+
+$Days3 = getChaBetweenTwoDate2($date3);
+
+if($Days3<3){
+    $TIP1 = " will come in less than 3 days. You should prepare for it.";
+echo $name3 . $TIP1;
+}
+else{
+    $TIP12 ="Don't Smoke or do Drugs, and Only Drink in Moderation.";
+echo $TIP12;
+}
+
+?>
+                                </li>
+
+
 							</font>
 							</ul>
 

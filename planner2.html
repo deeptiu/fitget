@@ -55,8 +55,8 @@
                         <ul class="collapse list-unstyled" id="commSubmenu">
                             <li><a href="CommunityHomepage.html">Community Home</a></li>
                             <li><a href="friendsList2.html">Friends</a></li>
-                            <li><a href="#">Groups</a></li>
-                            <li><a href="challenges2.html">Challenges</a></li>
+                            <li><a href="groups2.html">Groups</a></li>
+                            <li><a href="#">Challenges</a></li>
                         </ul>
                     </li>
 
@@ -94,8 +94,14 @@
         </header>
     	<div class="row">
     		<div class="col-lg-2 " >
-    			<h4><font size="5">3/24/2018</h4>
-    			<h5>Saturday</font></h5>
+    			<h4><font size="5"></h4>
+                  
+                   <script type="text/javascript"> 
+                    var myDate = new Date(); 
+                    document.write(myDate.toLocaleString()) 
+                    </script> 
+                   
+    			<h5></font></h5>
     			<div class="col-lg-12" >
     				<h6><b><font size="4">Events</font></b></h6>
     				<table class="table table-hover ">
@@ -104,20 +110,20 @@
     						
                            
                             <form action = "planner2_events.php" method = "post">
-                            Enter event1: <input name="name1" type="text">
-                            Enter date1(MM/DD/YYYY):<input name="date1" type="text">
+                            Enter event: <input name="name1" type="text">
+                            Enter date(YYYY-MM-DD):<input name="date1" type="text">
                            
-                            Enter event2: <input name="name2" type="text">
-                            Enter date2(MM/DD/YYYY):<input name="date2" type="text">
+                            Enter event: <input name="name2" type="text">
+                            Enter date(YYYY-MM-DD):<input name="date2" type="text">
                             
-                            Enter event3: <input name="name3" type="text">
-                            Enter date3(MM/DD/YYYY):<input name="date3" type="text">
+                            Enter event: <input name="name3" type="text">
+                            Enter date(YYYY-MM-DD):<input name="date3" type="text">
                             
-                            Enter event4: <input name="name4" type="text">
-                            Enter date4(MM/DD/YYYY):<input name="date4" type="text">
+                            Enter event: <input name="name4" type="text">
+                            Enter date(YYYY-MM-DD):<input name="date4" type="text">
 
-                            Enter event5: <input name="name5" type="text">
-                            Enter date5(MM/DD/YYYY):<input name="date5" type="text">
+                            Enter event: <input name="name5" type="text">
+                            Enter date(YYYY-MM-DD):<input name="date5" type="text">
 
                             <input type="submit">
                             </form>
@@ -131,7 +137,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-3">
-					<iframe src="https://calendar.google.com/calendar/embed?src=perrywu6%40gmail.com&ctz=America%2FNew_York" style="border: 0" width="640" height="480" frameborder="0" scrolling="no"></iframe>
+					<iframe src="https://calendar.google.com/calendar/embed?src=perrywu6%40gmail.com&ctz=America%2FNew_York" style="border: 0" width="660" height="480" frameborder="0" scrolling="no"></iframe>
 				</div>
 				<div class="col-sm-3 col-sm-offset-4"><!-- Start right side-->
 					<div class="container-fluid">
@@ -141,7 +147,7 @@
 								<th><font size="4">Current Goals</font></th>
 							</thead>
 							<tr>
-								<td>&bull; Workout 10 times this month <p> </p>
+								<td>&bull; Workout <font color="red">10 </font>times this month <p> </p>
 								End at 4/1/2018
 								<svg width="180" height="20" > 
   								<rect width="100%" height="90%" fill="url(#fill1)" stroke-width="1" stroke="black" />
@@ -154,7 +160,7 @@
 								
 							</tr>
 							<tr>
-								<td>&bull; Run 10 miles <p> </p>
+								<td>&bull; Run <font color="red">7 </font> miles <p> </p>
 								End at 5/3/2018
 								<svg width="180" height="20" > 
   								<rect width="100%" height="90%" fill="url(#fill3)" stroke-width="1" stroke="black" />
@@ -173,8 +179,37 @@
 
 					<div class="row">
 						<div class="well">
-							<r2><b><font size="4">Mood Tracker</font></b></r2>
-
+							<r2><b><font size="4">Mood Tracker<br></font></b></r2><!-- first bar-->
+                            <svg width="45" height="100" > 
+                                <rect width="40%" height="100%" fill="url(#fill2)" stroke-width="1" stroke="black" />
+                                <linearGradient id="fill2" gradientTransform="rotate(90)">            
+                                    <stop offset="30%" stop-color="white"/>
+                                    <stop offset="30%" stop-color="orange"/>
+                                </linearGradient>
+                            </svg>
+                                <svg width="45" height="100" > 
+                                <rect width="40%" height="100%" fill="url(#fill4)" stroke-width="1" stroke="black" />
+                                <linearGradient id="fill4" gradientTransform="rotate(90)">            
+                                    <stop offset="60%" stop-color="white"/>
+                                    <stop offset="60%" stop-color="green"/>
+                                </linearGradient>
+                            </svg>
+                               <svg width="45" height="100" > 
+                                <rect width="40%" height="100%" fill="url(#fill5)" stroke-width="1" stroke="black" />
+                                <linearGradient id="fill5" gradientTransform="rotate(90)">            
+                                    <stop offset="80%" stop-color="white"/>
+                                    <stop offset="80%" stop-color="red"/>
+                                </linearGradient>
+                            </svg>
+                               <svg width="45" height="100" > 
+                                <rect width="40%" height="100%" fill="url(#fill6)" stroke-width="1" stroke="black" />
+                                <linearGradient id="fill6" gradientTransform="rotate(90)">            
+                                    <stop offset="90%" stop-color="white"/>
+                                    <stop offset="90%" stop-color="blue"/>
+                                </linearGradient>
+                            </svg>
+                            <br>
+                            <pre class="tab">&#128515     &#128528     &#128543     &#128546</pre>
 
 						</div>
 					</div>

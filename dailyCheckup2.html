@@ -58,8 +58,8 @@
                         <ul class="collapse list-unstyled" id="commSubmenu">
                             <li><a href="CommunityHomepage.html">Community Home</a></li>
                             <li><a href="friendsList2.html">Friends</a></li>
-                            <li><a href="#">Groups</a></li>
-                            <li><a href="challenges2.html">Challenges</a></li>
+                            <li><a href="groups2.html">Groups</a></li>
+                            <li><a href="#">Challenges</a></li>
                         </ul>
                     </li>
 
@@ -148,7 +148,7 @@
                                         <input type="text" class="form-control" id="ounces">
                                     </div>
                                     <div class="col-xs-9">
-                                        <button class="btn btn-primary" type="submit">Submit</button>
+                                        <button class="btn btn-primary" id="submitButton" type="submit">Submit</button>
                                     </div>
                                 </div>
                             </div><br>
@@ -244,6 +244,11 @@
                      $('#sidebar').toggleClass('active');
                  });
              });
+             $('button').each(function(){
+                $('#submitButton').click(function(){
+                        $('input[type="text"]').val('');
+                        });
+                  });
          </script>
     </body>
 </html>
