@@ -92,36 +92,40 @@
             
             <h1><font size="8">Planner Module</font></h1>
         </header>
-    	<div class="row">
-    		<div class="col-lg-2 " >
-    			<h4><font size="5"></h4>
+        <div class="row">
+            <div class="col-lg-2 " >
+                <h4><font size="5"></h4>
                   
                    <script type="text/javascript"> 
                     var myDate = new Date(); 
                     document.write(myDate.toLocaleString()) 
                     </script> 
                    
-    			<h5></font></h5>
-    			<div class="col-lg-12" >
-    				<h6><b><font size="4">Events</font></b></h6>
-    				<table class="table table-hover ">
-    					<tbody>
-    						
-    						
+                <h5></font></h5>
+                <div class="col-lg-12" >
+                    <h6><b><font size="4">Events</font></b></h6>
+                    <table class="table table-hover ">
+                        <tbody>
+                            
+                            
                            
                             <form action = "planner2_events.php" method = "post">
                             Enter event: <input name="name1" type="text">
                             Enter date(YYYY-MM-DD):<input name="date1" type="text">
-                           
+                           <br />
+                           <br />
                             Enter event: <input name="name2" type="text">
                             Enter date(YYYY-MM-DD):<input name="date2" type="text">
-                            
+                            <br />
+                            <br />
                             Enter event: <input name="name3" type="text">
                             Enter date(YYYY-MM-DD):<input name="date3" type="text">
-                            
+                            <br />
+                            <br />
                             Enter event: <input name="name4" type="text">
                             Enter date(YYYY-MM-DD):<input name="date4" type="text">
-
+                            <br />
+                            <br />
                             Enter event: <input name="name5" type="text">
                             Enter date(YYYY-MM-DD):<input name="date5" type="text">
 
@@ -129,57 +133,57 @@
                             </form>
 
 
-						</tbody>
-					</table>
-    			</div>
-    		</div>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-3">
-					<iframe src="https://calendar.google.com/calendar/embed?src=perrywu6%40gmail.com&ctz=America%2FNew_York" style="border: 0" width="660" height="480" frameborder="0" scrolling="no"></iframe>
-				</div>
-				<div class="col-sm-3 col-sm-offset-4"><!-- Start right side-->
-					<div class="container-fluid">
-						<div class="well">
-						<table class="table table-bordered">
-							<thead>
-								<th><font size="4">Current Goals</font></th>
-							</thead>
-							<tr>
-								<td>&bull; Workout <font color="red">10 </font>times this month <p> </p>
-								End at 4/1/2018
-								<svg width="180" height="20" > 
-  								<rect width="100%" height="90%" fill="url(#fill1)" stroke-width="1" stroke="black" />
-                          	  <linearGradient id="fill1">            
-        							<stop offset="70%" stop-color="green"/>
-        							<stop offset="70%" stop-color="white"/>
-    							</linearGradient>
-								</svg>
-								</td>
-								
-							</tr>
-							<tr>
-								<td>&bull; Run <font color="red">7 </font> miles <p> </p>
-								End at 5/3/2018
-								<svg width="180" height="20" > 
-  								<rect width="100%" height="90%" fill="url(#fill3)" stroke-width="1" stroke="black" />
-                          	  	<linearGradient id="fill3">            
-        							<stop offset="20%" stop-color="red"/>
-        							<stop offset="20%" stop-color="white"/>
-    							</linearGradient>
-								</svg>
-								</td>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <iframe src="https://calendar.google.com/calendar/embed?src=perrywu6%40gmail.com&ctz=America%2FNew_York" style="border: 0" width="660" height="480" frameborder="0" scrolling="no"></iframe>
+                </div>
+                <div class="col-sm-3 col-sm-offset-4"><!-- Start right side-->
+                    <div class="container-fluid">
+                        <div class="well">
+                        <table class="table table-bordered">
+                            <thead>
+                                <th><font size="4">Current Goals</font></th>
+                            </thead>
+                            <tr>
+                                <td>&bull; Workout <font color="red">10 </font>times this month <p> </p>
+                                End at 4/1/2018
+                                <svg width="180" height="20" > 
+                                <rect width="100%" height="90%" fill="url(#fill1)" stroke-width="1" stroke="black" />
+                              <linearGradient id="fill1">            
+                                    <stop offset="70%" stop-color="green"/>
+                                    <stop offset="70%" stop-color="white"/>
+                                </linearGradient>
+                                </svg>
+                                </td>
+                                
+                            </tr>
+                            <tr>
+                                <td>&bull; Run <font color="red">7 </font> miles <p> </p>
+                                End at 5/3/2018
+                                <svg width="180" height="20" > 
+                                <rect width="100%" height="90%" fill="url(#fill3)" stroke-width="1" stroke="black" />
+                                <linearGradient id="fill3">            
+                                    <stop offset="20%" stop-color="red"/>
+                                    <stop offset="20%" stop-color="white"/>
+                                </linearGradient>
+                                </svg>
+                                </td>
 
-							</tr>
-						</table>
-						<!--<well style="background-color:#00ff00";>-->
-					</div>
-					</div>
+                            </tr>
+                        </table>
+                        <!--<well style="background-color:#00ff00";>-->
+                    </div>
+                    </div>
 
-					<div class="row">
-						<div class="well">
-							<r2><b><font size="4">Mood Tracker<br></font></b></r2><!-- first bar-->
+                    <div class="row">
+                        <div class="well">
+                            <r2><b><font size="4">Mood Tracker<br></font></b></r2><!-- first bar-->
                             <svg width="45" height="100" > 
                                 <rect width="40%" height="100%" fill="url(#fill2)" stroke-width="1" stroke="black" />
                                 <linearGradient id="fill2" gradientTransform="rotate(90)">            
@@ -211,28 +215,28 @@
                             <br>
                             <pre class="tab">&#128515     &#128528     &#128543     &#128546</pre>
 
-						</div>
-					</div>
-					<div class="row">
-						<div class="well">
-							<r3><b><font size="4">Daily Tips</font></b></r3>
-							<ul>
-								<font size="2">
-								<li>Tip 1</li>
-								<li>Tip 2</li>
-								<li>Tip 3</li>
-							</font>
-							</ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="well">
+                            <r3><b><font size="4">Daily Tips</font></b></r3>
+                            <ul>
+                                <font size="2">
+                                <li>Tip 1</li>
+                                <li>Tip 2</li>
+                                <li>Tip 3</li>
+                            </font>
+                            </ul>
 
-						</div>
-					</div>
-				</div>
-			</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-		</div>
-	</div>
+        </div>
+    </div>
 
-	
+    
     <!-- jQuery CDN -->
     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
     <!-- Bootstrap Js CDN -->
@@ -245,5 +249,5 @@
                 });
             });
         </script>
-</body>	
+</body> 
 </html>
