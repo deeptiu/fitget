@@ -1,3 +1,6 @@
+<!--    Planner2_event.php is a php file linked by Planner2.html. It is used for users to complete dynamic operations. Basically, this php file same format  as Planner2.html, which is meant to present the exactly same style as planner module. The only difference is that there are functions implemented by php and javascript. -->
+
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -11,10 +14,12 @@
   	
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css">
+
 	
     <link rel="stylesheet" href="style4.css" type="text/css">
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet" type="text/css">
-
+    <!-- to applly style file, which makes the page look exactly same as planner2.html. 
+    the difference there is that php must declearify what type of file linked here. -->
 	
 	<!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -43,7 +48,7 @@
                         </a>
                         <ul class="collapse list-unstyled" id="pageSubmenu">
                             <li><a href="workout2.html">Graphs</a></li>
-                            <li><a href="workout2.html">Recommended Videos</a></li>
+                            <li><a href="workout2.html/#Videos">Recommended Videos</a></li>
                         </ul>
                     </li>
                     <li>
@@ -110,7 +115,7 @@
     			<h5></font></h5>
     			<div class="col-lg-12" >
     				<h6><b><font size="4">Events</font></b></h6>
-                    
+                    <!-- This is a javascript function to get the current time through instruction Date() and print it -->
                     <head>
 <title>Table</title>
 </head>
@@ -133,8 +138,8 @@
 
     $name5 = $_POST["name5"];
     $date5 = $_POST["date5"];
+    //The php function start with <?php. There are 10 user inputs passing by php instruction POST from html to php. these varibles will be called later by other functions. These varibles will also be stored into database in the future.
 
-  
                         
                              
  echo "<font size=\"4\" >$date1</font> <br>". "<font size=\"3\" >$name1</font>";
@@ -150,11 +155,11 @@ echo "<font size=\"4\" >$date3</font><br>". "<font size=\"3\" >$name3</font>";
  echo "<br>";
  echo "<br>";
  echo "<font size=\"4\" >$date5</font><br>". "<font size=\"3\" >$name5</font>";
-                        
+ // print user input                        
 
                     
 ?>
-
+<!-- php ends -->
 
 </body>
                 
@@ -164,6 +169,7 @@ echo "<font size=\"4\" >$date3</font><br>". "<font size=\"3\" >$name3</font>";
 			<div class="row">
 				<div class="col-sm-3">
 					<iframe src="https://calendar.google.com/calendar/embed?src=perrywu6%40gmail.com&ctz=America%2FNew_York" style="border: 0" width="660" height="480" frameborder="0" scrolling="no"></iframe>
+                    <!-- temporarily use google calender and set the scale -->
 				</div>
 				<div class="col-sm-3 col-sm-offset-4"><!-- Start right side-->
 					<div class="container-fluid">
@@ -205,37 +211,8 @@ echo "<font size=\"4\" >$date3</font><br>". "<font size=\"3\" >$name3</font>";
 
 					<div class="row">
 						<div class="well">
-                            <r2><b><font size="4">Mood Tracker<br></font></b></r2><!-- first bar-->
-                            <svg width="45" height="100" > 
-                                <rect width="40%" height="100%" fill="url(#fill2)" stroke-width="1" stroke="black" />
-                                <linearGradient id="fill2" gradientTransform="rotate(90)">            
-                                    <stop offset="30%" stop-color="white"/>
-                                    <stop offset="30%" stop-color="orange"/>
-                                </linearGradient>
-                            </svg>
-                                <svg width="45" height="100" > 
-                                <rect width="40%" height="100%" fill="url(#fill4)" stroke-width="1" stroke="black" />
-                                <linearGradient id="fill4" gradientTransform="rotate(90)">            
-                                    <stop offset="60%" stop-color="white"/>
-                                    <stop offset="60%" stop-color="green"/>
-                                </linearGradient>
-                            </svg>
-                               <svg width="45" height="100" > 
-                                <rect width="40%" height="100%" fill="url(#fill5)" stroke-width="1" stroke="black" />
-                                <linearGradient id="fill5" gradientTransform="rotate(90)">            
-                                    <stop offset="80%" stop-color="white"/>
-                                    <stop offset="80%" stop-color="red"/>
-                                </linearGradient>
-                            </svg>
-                               <svg width="45" height="100" > 
-                                <rect width="40%" height="100%" fill="url(#fill6)" stroke-width="1" stroke="black" />
-                                <linearGradient id="fill6" gradientTransform="rotate(90)">            
-                                    <stop offset="90%" stop-color="white"/>
-                                    <stop offset="90%" stop-color="blue"/>
-                                </linearGradient>
-                            </svg>
-                            <br>
-                            <pre class="tab">&#128515     &#128528     &#128543     &#128546</pre>
+							<r2><b><font size="4">Mood Tracker</font></b></r2>
+
 
 						</div>
 					</div>
@@ -263,16 +240,16 @@ echo "<font size=\"4\" >$date3</font><br>". "<font size=\"3\" >$name3</font>";
 
 
 function getChaBetweenTwoDate($date){
-    $showtime=date("Y-m-d");
+    $showtime=date("Y-m-d");//get current date
     $Date_List_a1=explode("-",$date);
-    $Date_List_a2=explode("-",$showtime);
+    $Date_List_a2=explode("-",$showtime);//delete "-"
     $d1=mktime(0,0,0,$Date_List_a1[1],$Date_List_a1[2],$Date_List_a1[0]);
-    $d2=mktime(0,0,0,$Date_List_a2[1],$Date_List_a2[2],$Date_List_a2[0]);
-    $Days=round(($d1-$d2)/3600/24);
+    $d2=mktime(0,0,0,$Date_List_a2[1],$Date_List_a2[2],$Date_List_a2[0]);//use mktime to Return the Unix timestamp for a date. set 0,0,0 for hour, mintue and second.
+    $Days=round(($d1-$d2)/3600/24);//get the difference in the scale of days. round it to an integer
     return $Days;}
-   
+   // a function to calculate the difference of current date and the date of events.
 
-$Days = getChaBetweenTwoDate($date1);
+$Days = getChaBetweenTwoDate($date1);//call function
 
 if($Days<3){
     $TIP1 = " will come in less than 3 days. You should prepare for it.";
@@ -282,6 +259,8 @@ else{
     $TIP10 ="Drink Some Water, Especially Before Meals";
 echo $TIP10;
 }
+//determine wheather to inform user or provide a tip. this will be improve by making the notification more accurate and provides related tips
+
 
 ?>
 </li>
