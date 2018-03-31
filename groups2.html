@@ -5,6 +5,26 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
+			<style>
+			* {
+			    box-sizing: border-box;
+			}
+
+			/* Create three equal columns that floats next to each other */
+				.column {
+			    float: left;
+			    width: 33.33%;
+			    padding: 10px;
+			    height: 280px; 
+				}
+
+			/* Clear floats after the columns */
+				.row:after {
+			    content: "";
+			    display: table;
+			    clear: both;
+				}
+			</style>
         <title>Fitget Group Challenges</title>
 
          <!-- Bootstrap CSS CDN -->
@@ -15,6 +35,8 @@
         <!-- Our Custom CSS -->
         <link rel="stylesheet" href="style4.css">
         <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+        
     </head>
     <body>
 
@@ -101,111 +123,72 @@
                 </nav>
 
 
-             <div class="container-fluid">
-               <div class="row content">
-                 <!-- <div class="col-sm-3 sidenav">
-                   <h4>My Community</h4> -->
-                   <!-- <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cat03.jpg/1200px-Cat03.jpg" class="img-circle" alt="Profile Photo" height="250"width="250"> -->
-                   <!-- <br>
-                   <ul class="nav nav-pills nav-stacked">
-                   <br>
-                     <li><a href="#section1">Home</a></li>
-                     <li><a href="#section2">Friends List</a></li>
-                     <li class="active"><a href="#section3">Groups</a></li>
-                     <li><a href="#section3">Challenges</a></li>
-                   </ul><br> -->
-                  
-                 </div>
-                <div class="col-sm-4">     
-                   <h1>My Groups</h1>
+                <h1>My Groups</h1>
                    <button type="button" class="btn btn-primary btn-lg"><a href="createGroup.html">Create Group</a></button>
-                       
-                           
-                 <hr>
 
-                  <h2 style="color:blue"><a href="https://www.runnersworld.com/running-tips"<b>Running     </a></span><input type="checkbox" data-toggle="toggle" data-on="Join" data-off="Joined"></b><h2>
+<br>
+<br>
+<br>
 
-
-                  <h5><span class="label label-success">Active Members:</span> <span>25</span></h5>
-                  <br>
-                  <h5><span class="label label-success">Description:</span> </h5>
-                  <span>Do you like to imagine the world is your racetrack? Do you like to run without knowing where you'll end up? The running group is the perfect addition to fit your interests. Here you can connect with like minded people. </span>
-                  
-
-                       
-                  <hr>
-
-
-                  <h2 style="color:orange"><a href="https://www.yogajournal.com/">Yoga    </a> <input type="checkbox"data-toggle="toggle" data-on="Join" data-off="Joined"></h2><br>
-                  
-                  <h5><span class="label label-success">Active Members:</span> <span>15</span></h5>
-                  <br>
-                  <h5><span class="label label-success">Description:</span> </h5>
-                  <span>Do you enjoy taking in a deep breath with the sun stil yet to rise and the morning dew still intact? Find your inner peace by joining the Yoga group. This group serves to destress and relax before you go about your busy day. Don't forget your yoga mat!</span>
-
-                  <hr>
-                  </div>     
-
-                 
-
-                   <div class="col-sm-4"> <br><br><br><br><br><br><br>
-                    <h4>Rankings</h4><br>
-                        
-                        <ol>
+					<div class="row">
+					  <div class="column" style="background-color:#FFFAF0;">
+					    <h2 style="color:blue">&nbsp; Running &emsp;&emsp;<input type="checkbox" data-toggle="toggle" data-on="Join" data-off="Joined"></h2>
+					    <h5><span class="label label-success">Active Members:</span> <span>25</span></h5>
+					    <p><font color="black">Do you like to imagine the world is your racetrack? Do you like to run without knowing where you'll end up? The running group is the perfect addition to fit your interests. Here you can connect with like minded people.</font></p>
+					  </div>
+					  <div class="column" style="background-color:#FDF5E6;">
+					    <h2>Rankings</h2>
+					    <p>
+					    <ol>
                             <li>Deepti          400</li><br>
                             <li>Faith           350</li><br>
                             <li>Jeff            2750</li><br>
                             <li>Adithya         200</li>
-                        </ol>
+                        </ol></p>
+					  </div>
+					  <div class="column" style="background-color:#FFFAF0;">
+					    <h2>Challenges</h2>
+					    <p>
+					    <ol>
+                               <li>30 min cardio -> 30 points</li><br>
+                               <li>Stretching -> 10 points</li><br>
+                               <li>8 glasses of water -> 20 points</li>
+                           </ol></p>
+					  </div>
+					</div>
 
-                      <br><br><br><br><br><br>
-                   <h4>Rankings</h4><br>
-                     
-                 <ol>
+<br>
+<br>
+
+			<div class="row">
+					  <div class="column" style="background-color:#FFFAF0;">
+					    <h2 style="color:blue">&nbsp; Yoga &emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" data-toggle="toggle" data-on="Join" data-off="Joined"></h2>
+					    <h5><span class="label label-success">Active Members:</span> <span>15</span></h5>
+					    <p><font color="black">Do you enjoy taking in a deep breath with the sun stil yet to rise and the morning dew still intact? Find your inner peace by joining the Yoga group. This group serves to destress and relax before you go about your busy day. Don't forget your yoga mat!</font></p>
+					  </div>
+					  <div class="column" style="background-color:#FDF5E6;">
+					    <h2>Rankings</h2>
+					    <p>
+					    <ol>
                             <li>Neharika        600</li><br>
                             <li>Perry           500</li><br>
                             <li>Jingchao        400</li><br>
                             <li>Archana         350</li>
                         </ol>
-                   <hr>
-                   </div> 
-
-                    <div class="col-sm-4">     
-                                            
-                     <hr><hr>
-                     <br><br><br>
-
-                      <h5><span class="label label-success">Challenges</span> </h5><br>
-                           <ol>
-                               <li>30 min cardio -> 30 points</li><br>
-                               <li>Stretching -> 10 points</li><br>
-                               <li>8 glasses of water -> 20 points</li>
+                        </p>
+					  </div>
+					  <div class="column" style="background-color:#FFFAF0;">
+					    <h2>Challenges</h2>
+					    <p>
+					    <ol>
+                               <li>Sun salutations  25 points</li><br>
+                               <li>8 glasses of water  20 points</li><br>
+                               <li>Meditation for 10min  20 points</li><br>
+                               <li>Meditation for 30min  60 points</li>
                            </ol>
-
-                         <hr>
-                <br>
-
-                      
-                      <hr>  
-                      <br>        
-                      <br>
-                      <h5><span class="label label-success">Challenges</span></h5><br>
-                      <ol>
-                               <li>Sun salutations ---> 25 points</li><br>
-                               <li>8 glasses of water ---> 20 points</li><br>
-                               <li>Meditation for 10min ---> 20 points</li><br>
-                               <li>Meditation for 30min ---> 60 points</li>
-                           </ol>
-
-                      <hr>
-                      </div>   
-                  <div>
-                 <div>
-
-
-                
-            </div> <!-- end content -->
-        </div>
+                           </p>
+					  </div>
+					</div>
 
 
         <!-- jQuery CDN -->
